@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div>Student Enrollment Form</div>
+    </nav>
+
+    <div class="container">
+        <div class="col-1">
+            <form onsubmit="return false" id="a-form">
+                <div class="labels">
+                    <label for="username">Name:</label>
+
+                    <label for="email">Email:</label>
+
+                    <label for="website">Website:</label>
+
+                    <label for="image">Image link:</label>
+
+                    <label for="male">Gender:</label>
+
+                    <label for="skills">Skills:</label>
+
+
+
+                </div>
+
+                <div class="inputs">
+                    <input type="text" placeholder="Enter your full name..." id="username">
+
+                    <input type="email" placeholder="Enter your email id..." id="email">
+
+                    <input type="text" id="website" placeholder="Enter your website link">
+
+                    <input type="text" id="image" placeholder="Enter your Image link">
+
+                    <div id="gender">
+                        <div class="">
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+
+
+                        <div class="">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+
+
+                    </div>
+
+                    <div id="skills">
+                        <input type="checkbox" id="java" value="Java" name="skill" checked>
+                        <label for="java">Java</label>
+
+                        <input type="checkbox" id="html" value="HTML" name="skill">
+                        <label for="html">HTML</label>
+
+                        <input type="checkbox" id="css" value="CSS" name="skill">
+                        <label for="css">CSS</label>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </form>
+
+            <button type="submit" id="submit" form="a-form" onclick="myFunc()">Enroll Student</button>
+
+            <button type="reset" id="reset" form="a-form">Clear</button>
+        </div>
+        <div class="vertical"></div>
+        <div class="col-2">
+            <h2>Enrolled Students</h2>
+
+
+
+            <div class="new">
+                <table border="1" id="myTable">
+                    <tr>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
